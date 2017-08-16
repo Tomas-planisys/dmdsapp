@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <script src="./js/vue.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/Wizardy.js?version=3"></script>
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+      <script src="./js/moment-with-locales.js"></script>
+      <script src="./js/vue-material.js"></script>
+    
+
+</head>
+    
+<body id="searcher">
+<div class="app-viewport" id="file-list">
+    
+    <md-whiteframe md-elevation="3" class="main-toolbar">
+ 
+      <md-toolbar class="md-dense">
+ <md-button class="md-icon-button" id="goBack">
+    <md-icon>arrow_back</md-icon>
+  </md-button>
+  <div class="bar">
+        <!-- Create a binding between the searchString model and the text field -->
+        <md-icon>search</md-icon>
+        <input type="text" v-model="searchString" placeholder="Enter your search terms" />
+    </div>
+  
+</md-toolbar>
+    
+    
+    
+    <md-tabs md-fixed>
+  <md-tab id="campanas" md-label="campanas">
+    <p>Aquí los resultados de la búsqueda que pertenezcan a Campanas.</p>
+  </md-tab>
+
+  <md-tab id="envios" md-label="envios">
+    <p>Aquí los resultados de la búsqueda que pertenezcan a Envíos.</p>
+  </md-tab>
+
+ 
+</md-tabs>
+    </md-whiteframe>
+    </div>
+    
+<!--    <link rel="stylesheet" href="./css/searcher.css">-->
+    
+    <link rel="stylesheet" href="./css/vue-material.css">
+
+    
+    <script src="cordova.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/listeners.js"></script>
+     <script src="./js/searcher.js"></script>
+   
+    
+</body>
+</html>
