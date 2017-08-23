@@ -40,7 +40,7 @@
   <h2 class="md-title headerCamp" style="flex: 1">Envíos</h2>
 
           <div style="flex: 0.25">
-               <md-button class="md-icon-button" onclick="searchAll()" id="searcher">
+               <md-button class="md-icon-button" id="searcher">
       <i class="material-icons">search</i>
                 </md-button>
        </div>
@@ -130,7 +130,7 @@
     </md-card-header-text>
 
     <md-menu md-size="4" md-direction="bottom left">
-      <md-button class="md-icon-button" md-menu-trigger v-on:click="gotoStats3(data.info.id, data.info.envio.nombre)" >
+      <md-button class="md-icon-button" md-menu-trigger v-on:click="gotoStats3(data.info.envio_id, data.info.envio.nombre)" >
         <i class="material-icons">equalizer</i>
       </md-button>
       <md-menu-content>
@@ -138,7 +138,7 @@
     </md-menu>
     
     <md-menu md-size="4" md-direction="bottom left">
-      <md-button class="md-icon-button" md-menu-trigger v-on:click="gotoInfo3(data.info.id, data.info.envio.nombre)" >
+      <md-button class="md-icon-button" md-menu-trigger v-on:click="gotoInfo3(data.info.envio_id, data.info.envio.nombre)" >
         <i class="material-icons">info_outline</i>
       </md-button>
 
@@ -153,26 +153,41 @@
         
        <div style="display:flex; text-align:center;"> 
         
+<!--
            <div class="" style="flex:1; margin-right:5px; text-align:left; width:20%;">
-        <i class="material-icons">play_arrow</i></div><div> {{ (data.info.ev_envio) }}
+        <i class="material-icons">play_arrow</i></div>
+-->
+           <div> {{ (data.info.ev_envio) }}
      </div>
      
            
+<!--
            <div class="" style="flex:1; margin-right:5px;">
-<i class="material-icons">open_in_browser</i></div> <div style="vertical-align: text-top;">{{ (data.info.ev_vista) }}
+<i class="material-icons">open_in_browser</i></div>
+-->
+           <div style="vertical-align: text-top; margin-right:5px;">{{ (data.info.ev_vista) }}
      </div>
            
+<!--
            <div class="" style="flex:1; margin-right:5px;">
                
-               <i class="material-icons">touch_app</i> </div><div style="vertical-align: text-top;">{{ (data.info.ev_click) }}
+               <i class="material-icons">touch_app</i> </div>
+-->
+           <div style="vertical-align: text-top; margin-right:5px;">{{ (data.info.ev_click) }}
            </div>
+<!--
            <div class="" style="flex:1; margin-right:5px;">
                
-               <span>OR</span> </div><div style="vertical-align: text-top;">{{ (data.info.ev_OR) }}
+               <span>OR</span> </div>
+-->
+           <div style="vertical-align: text-top; margin-right:5px;">OR: {{ (data.info.ev_OR) }}
            </div>
+<!--
 <div class="" style="flex:1; margin-right:5px;">
                
-                <span>CTR</span> </div><div style="vertical-align: text-top;">{{ (data.info.ev_CTR) }}
+                <span>CTR</span> </div>
+-->
+           <div style="vertical-align: text-top; margin-right:5px;">CR: {{ (data.info.ev_CTR) }}
            </div>
 </div>
     </md-card-content>
@@ -188,13 +203,13 @@
     </main>
     
     
-    <div class="footer">
+<!--    <div class="footer">-->
     <md-bottom-bar>
   <md-bottom-bar-item md-iconset="icon-speedometer" id="aDashboard"></md-bottom-bar-item>
   <md-bottom-bar-item md-iconset="icon-paper-plane">Campañas</md-bottom-bar-item>
   <md-bottom-bar-item md-iconset="icon-envelope"></md-bottom-bar-item>
 </md-bottom-bar>
-    </div>
+    
     
     </div>   
     

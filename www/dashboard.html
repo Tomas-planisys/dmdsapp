@@ -39,7 +39,7 @@
   <h2 class="md-title headerCamp" style="flex: 1">Dashboard</h2>
 
           <div style="flex: 0.25">
-               <md-button class="md-icon-button" onclick="searchAll()" id="searcher">
+               <md-button class="md-icon-button" id="searcher">
       <i class="material-icons">search</i>
                 </md-button>
        </div>
@@ -96,28 +96,12 @@
     <div class="md-subhead" style="flex: 1">Emails enviados</div>
     </md-card-header-text>
 
-    <md-menu md-size="4" md-direction="bottom left">
-      <md-button class="md-icon-button" md-menu-trigger>
-        <md-icon>more_vert</md-icon>
+    
+      <md-button id="btnDashDay" class="md-icon-button" md-menu-trigger>
+        <span>7 dias</span>
       </md-button>
 
-      <md-menu-content>
-        <md-menu-item>
-          <span>7 dias</span>
-        </md-menu-item>
-
-        <md-menu-item>
-          <span>30 dias</span>
-        </md-menu-item>
-          <md-menu-item>
-          <span>90 dias</span>
-        </md-menu-item>
-
-        <md-menu-item>
-          <span>365 dias</span>
-        </md-menu-item>
-      </md-menu-content>
-    </md-menu>
+      
   </md-card-header>
 
   <md-card-content>
@@ -126,16 +110,20 @@
   <md-list class="md-double-line">
     
       <md-list-item>
-        <div class="md-list-text-container">
+          
+        <div class="md-list-text-container"> 
         <span>542.854</span>
         <span>Apertura Totales</span>
+             
         </div>
 
           <div class="md-list-text-container" style="align-items: flex-end;">
-            <span>30%</span>
+            <span>70%</span>
             <span>de enviados</span>
+              <md-progress :md-progress="70"></md-progress>  
           </div>
-        <md-divider class="md-inset"></md-divider>
+        
+
       </md-list-item>
       
       <md-list-item>
@@ -147,8 +135,10 @@
           <div class="md-list-text-container" style="align-items: flex-end;">
             <span>30%</span>
             <span>de enviados</span>
+              <md-progress class="md-accent" :md-progress="30"></md-progress>
           </div>
-        <md-divider class="md-inset"></md-divider>
+        
+
       </md-list-item>
       
       <md-list-item>
@@ -160,19 +150,22 @@
           <div class="md-list-text-container" style="align-items: flex-end;">
             <span>30%</span>
             <span>de aperturas</span>
+              <md-progress class="md-warn" :md-progress="30"></md-progress>
           </div>
-        <md-divider class="md-inset"></md-divider>
+        
       </md-list-item>
       
       <md-list-item>
         <div class="md-list-text-container">
         <span>542.854</span>
         <span>Clicks unicos</span>
+             
         </div>
 
           <div class="md-list-text-container" style="align-items: flex-end;">
-            <span>30%</span>
+            <span>45%</span>
             <span>de aperturas</span>
+              <md-progress :md-progress="45"></md-progress>  
           </div>
         <md-divider class="md-inset"></md-divider>
       </md-list-item>
@@ -184,8 +177,9 @@
         </div>
 
           <div class="md-list-text-container" style="align-items: flex-end;">
-            <span>30%</span>
+            <span>10%</span>
             <span>de enviados</span>
+              <md-progress class="md-warn" :md-progress="10"></md-progress>
           </div>
         <md-divider class="md-inset"></md-divider>
       </md-list-item>
@@ -194,11 +188,13 @@
         <div class="md-list-text-container">
         <span>542.854</span>
         <span>Rebotes unicos</span>
+            
         </div>
 
           <div class="md-list-text-container" style="align-items: flex-end;">
-            <span>30%</span>
+            <span>39%</span>
             <span>de enviados</span>
+              <md-progress class="md-warn" :md-progress="30"></md-progress>
           </div>
         <md-divider class="md-inset"></md-divider>
       </md-list-item>
@@ -207,11 +203,13 @@
         <div class="md-list-text-container">
         <span>542.854</span>
         <span>Desuscripciones</span>
+            
         </div>
 
           <div class="md-list-text-container" style="align-items: flex-end;">
             <span>30%</span>
             <span>de enviados</span>
+              <md-progress class="md-warn" :md-progress="39"></md-progress>
           </div>
         <md-divider class="md-inset"></md-divider>
       </md-list-item>
@@ -230,16 +228,14 @@
   </md-card-actions>
 </md-card>
     
-    
-    
-    
-    <div class="footer">
-    <md-bottom-bar>
+
+<!--    <div class="footer">-->
+    <md-bottom-bar >
   <md-bottom-bar-item md-iconset="icon-speedometer">Dashboard</md-bottom-bar-item>
   <md-bottom-bar-item md-iconset="icon-paper-plane" id="aCampanas"></md-bottom-bar-item>
-  <md-bottom-bar-item md-iconset="icon-envelope" id="aEnvios"></md-bottom-bar-item>
+  <md-bottom-bar-item md-iconset="icon-envelope" id="aEnvios" disabled="true"></md-bottom-bar-item>
 </md-bottom-bar>
-    </div>
+   
     
     </div>   
     

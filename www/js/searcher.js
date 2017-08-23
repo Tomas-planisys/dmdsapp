@@ -30,9 +30,12 @@ app.initialize();
 
 //////////////////START////////////////////////////
 function deviceReadyM() {
-    console.log('hi to searcher');
+//    console.log('hi to searcher');
+    
+    StatusBar.backgroundColorByName("blue"); 
+  $("#searcher").removeClass("hidden");
     
     $('#goBack').click(function(e) {
-    location.replace('./envios.html');
+    location.replace('./dashboard.html');
         });
 }

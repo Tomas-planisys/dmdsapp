@@ -72,3 +72,21 @@ body.loading .modal {
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
+
+
+#butCarMasE{
+
+	background: rgb(155, 200, 216);
+	color: #fff;
+    border-color: black;
+/*    left: 20%;*/
+/*    min-width: 100%; */
+
+	/* CSS Transition */
+	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
+	transition: background .2s ease-in-out, border .2s ease-in-out;
+
+}

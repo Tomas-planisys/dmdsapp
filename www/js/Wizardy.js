@@ -211,8 +211,15 @@ WizzardDMDS.prototype.processCampanas = function(campana){
 	}
 //    wiz.Campanas.push({'recordsFiltered':campana.recordsFiltered});
 //console.log(wiz.Campanas);
-    totalCampanas=campana.recordsFiltered;
+//alert(page);
+
+  if(page=='dashboard'){
+      processTotals();
+  }else if(page=='campanas'){
+        totalCampanas=campana.recordsFiltered;
 	printCampanas();
+  }
+    
 }
 
 
@@ -230,15 +237,16 @@ totalEnvios=envios.recordsFiltered;
 		var envioss = new WizzardDMDS.Envios(obj);
 		wiz.envios.push(envioss);
 	}
-	printEnvios();
+	
     
     
     
-    var lan = 10;
+    var lan = 11;
     var o;
 	wiz.enviosTot = new Array();
 
-		var obj = {
+		var obj = {            
+"totalEnvios":envios.recordsFiltered,
 "ev_envio":envios.totals.ev_envio,
 "ev_click":envios.totals.ev_click,
 "ev_vista":envios.totals.ev_vista,
@@ -253,9 +261,18 @@ totalEnvios=envios.recordsFiltered;
 		var campanastt = new WizzardDMDS.EnviosTot(obj);
 		wiz.enviosTot.push(campanastt);
 
-//    console.log(wiz.enviosTot);
+//    console.log(JSON.stringify(wiz.enviosTot));
     
 //    printEnviosTot();
+    if(page=='campanasStats'){
+        inicioStatsCamp();
+  }else if(page=='envios'){
+        printEnvios();
+  }else if(page=='envioStats'){
+        inicioStatsEnv();
+  }
+    
+    
 }
 WizzardDMDS.prototype.processEnvios2 = function(envios2){
     
@@ -292,6 +309,13 @@ WizzardDMDS.prototype.processUP = function(userPerfil){
 	wiz.UP.push(aux);
 }
 
+
+WizzardDMDS.prototype.processinfoE1 = function(campanas){
+    
+//  console.log(JSON.stringify(campanas.pieza_html));
+//    cambiarFrame(campanas.pieza_html);
+    startInfoEnvio(campanas.pieza_html);
+}
 
 // - Campana
 
@@ -359,4 +383,8 @@ function getCookie(cname) {
       }
   }
   return "";
+}
+
+function printPerfil(){
+    console.log(wiz.Perfil);
 }

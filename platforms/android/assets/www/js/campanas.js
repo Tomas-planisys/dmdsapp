@@ -17,7 +17,7 @@ var pswAuxMeu;
 var a,b,c,d,e,f,x,y,z;
 var permissions,language;
 
-
+var page='campanas';
 var app = {
     // Application Constructor
     initialize: function() {
@@ -83,15 +83,11 @@ function deviceReadyM() {
         loadWizzard();
 
 
-     
-
         window.onpopstate = function(event) {
             if(event && event.state) {
                 location.reload();
             }
         }
-
-
 }
 /////////////////////////////////////
 ///////FINAL DEL DOCUMENT READY//////
@@ -130,4 +126,24 @@ $('#goBack').click(function(e) {
 $('#searcher').click(function(e) {
     location.replace('./searcher.html');
         });
+    
+    var clicks=0;
+     $('#btnCampDay').click(function(e) {
+         if( clicks==0){
+    $("#btnCampDay").html('30 Dias');
+             clicks=1;
+             }else if( clicks==1){
+    $("#btnCampDay").html('90 Dias');
+                 clicks=2;
+             }else if( clicks==2){
+    $("#btnCampDay").html('365 Dias');
+                 clicks=3;
+             }else if( clicks==3){
+    $("#btnCampDay").html('7 Dias');
+                 clicks=0;
+             }
+             e.preventDefault();
+    });
+    
+    
     }

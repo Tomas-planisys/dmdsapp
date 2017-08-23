@@ -40,7 +40,7 @@ function gotoEnvios2(id,name){
         localStorage.campanaId=campanaId;
         localStorage.campanaName=name;
     
-    history.pushState({urlPath:'./envios.html'},"page 4",'./envios.html');
+//    history.pushState({urlPath:'./envios.html'},"page 4",'./envios.html');
     location.replace('./envios.html');
 }
 function gotoStats2(id,name){
@@ -50,7 +50,7 @@ function gotoStats2(id,name){
         localStorage.campanaId=campanaId;
         localStorage.campanaName=name;
     
-    location.replace('./stats.html');
+    location.replace('./statsC.html');
 }
 
 function cargarMas(){

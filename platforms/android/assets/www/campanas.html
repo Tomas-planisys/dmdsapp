@@ -38,7 +38,7 @@
   <h2 class="md-title headerCamp" style="flex: 1">Campañas</h2>
 
           <div style="flex: 0.25">
-               <md-button class="md-icon-button" onclick="searchCampanas()" id="searcher">
+               <md-button class="md-icon-button" id="searcher">
       <i class="material-icons">search</i>
                 </md-button>
        </div>
@@ -76,46 +76,19 @@
 <!--    <h4 class="md-title headerCamp" style="flex: 1">Lista de campañas de lo últimos</h4>-->
     
     <md-card md-with-hover>
-<!--
-  <md-card-header>
-    <div class="md-title" style="flex: 1">1.542.854</div>
-    <div class="md-subhead" style="flex: 1">Emails enviados</div>
-    
-      <div style="flex: 1"><md-button class="md-icon-button" md-menu-trigger>
-        <md-icon>more_vert</md-icon>
-      </md-button>
-</div>
- 
-  </md-card-header>
--->
+
 
 <md-card-header>
     <md-card-header-text>
       <div class="md-title" style="flex: 1">Campañas de los últimos: </div>
     </md-card-header-text>
 
-    <md-menu md-size="4" md-direction="bottom left">
-      <md-button class="md-icon-button" md-menu-trigger>
-        <md-icon>more_vert</md-icon>
+    
+      <md-button id="btnCampDay" class="md-icon-button" md-menu-trigger>
+        <span>7 dias</span>
       </md-button>
 
-      <md-menu-content>
-        <md-menu-item>
-          <span>7 dias</span>
-        </md-menu-item>
-
-        <md-menu-item>
-          <span>30 dias</span>
-        </md-menu-item>
-          <md-menu-item>
-          <span>90 dias</span>
-        </md-menu-item>
-
-        <md-menu-item>
-          <span>365 dias</span>
-        </md-menu-item>
-      </md-menu-content>
-    </md-menu>
+  
   </md-card-header>
 
         <md-card-content></md-card-content>
@@ -153,24 +126,35 @@
         
        <div style="display:flex; text-align:center;"> 
         
+<!--
            <div class="" style="flex:1; margin-right:5px; text-align:left; width:20%;">
-        <i class="material-icons">play_arrow</i></div><div> {{ (data.info.stats.emails_enviados) }}
+        <i class="material-icons">play_arrow</i></div>
+-->
+           <div style="display:flex; text-align:center; margin-left:8px;"> Envíos: {{ (data.info.stats.envios_hechos) }}
      </div>
            
+<!--
            <div class="" style="flex:1; margin-right:5px;">
                <i class="material-icons">mail</i> 
            </div>
+-->
            
-           <div style="vertical-align: text-top;">{{ (data.info.stats.envios_hechos) }}</div>
+           <div style="vertical-align: text-top; margin-left:8px;"> Mails: {{ (data.info.stats.emails_enviados) }}</div>
            
            
+<!--
            <div class="" style="flex:1; margin-right:5px;">
-<i class="material-icons">open_in_browser</i></div> <div style="vertical-align: text-top;">{{ (data.info.stats.click_rate) }}
+<i class="material-icons">open_in_browser</i></div>
+-->
+           <div style="vertical-align: text-top; margin-left:8px;"> OR: {{ (data.info.stats.open_rate) }}
      </div>
            
+<!--
            <div class="" style="flex:1; margin-right:5px;">
                
-               <i class="material-icons">touch_app</i> </div><div style="vertical-align: text-top;">{{ (data.info.stats.open_rate) }}
+               <i class="material-icons">touch_app</i> </div>
+-->
+           <div style="vertical-align: text-top; margin-left:8px;"> CR: {{ (data.info.stats.click_rate) }}
            </div>
 </div>
     </md-card-content>
@@ -193,13 +177,13 @@
     
     
     
-    <div class="footer">
+<!--    <div class="footer">-->
     <md-bottom-bar>
   <md-bottom-bar-item md-iconset="icon-speedometer" id="aDashboard"></md-bottom-bar-item>
   <md-bottom-bar-item md-iconset="icon-paper-plane">Campañas</md-bottom-bar-item>
-  <md-bottom-bar-item md-iconset="icon-envelope"></md-bottom-bar-item>
+  <md-bottom-bar-item md-iconset="icon-envelope" disabled></md-bottom-bar-item>
 </md-bottom-bar>
-    </div>
+    
     
     </div>   
     

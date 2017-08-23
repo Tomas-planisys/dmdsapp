@@ -37,11 +37,12 @@ function deviceReadyM() {
    
     
   if(localStorage.getItem("nuevo")==null){
-//            console.log('entra n=n');
+            console.log('entra nuevo=null');
         $body.removeClass("hidden");
             
             
         }else if(localStorage.getItem("nuevo")=='Bueno'){
+//            $body.addClass("loading");
             startPageLogin(localStorage.getItem("usrAuxMeu"),localStorage.getItem("pswAuxMeu"));
         }else{
 //            inicioCampanas();
@@ -129,7 +130,7 @@ xhr.onreadystatechange = function () {
         getAuth(1,"user/id/"+userEmail);
 
         }else{
-            console.log("Entra login else.");
+            console.log("Entra login else. con: xhr.readyState "+xhr.readyState+' xhr.status '+xhr.status);
 //        alert("Tu login es incorrecto, vuelve a intentarlo.");
         }
     //console.log(xhr.readyState +"/"+xhr.status);

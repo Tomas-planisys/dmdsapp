@@ -1,7 +1,7 @@
 #formLogin{
     margin: 0;
 /*    background: yellow;*/
-    position: absolute;
+    position: relative;
     top: 65%;
     left: 50%;
     margin-right: -50%;
@@ -26,7 +26,10 @@
 
 
 
-
+.hidden
+{
+   display: none
+}
 
 
 
@@ -47,9 +50,9 @@ div.image img {
     margin: 0;
 /*    background: yellow;*/
     position: absolute;
-    top: 120%;
-    left: 50%;
-    margin-right: -50%;
+    top: 28em;
+/*    left: 40%;*/
+/*    margin-right: -50%;*/
     transform: translate(-50%, -50%) 
 }
 .footer {
