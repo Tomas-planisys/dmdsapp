@@ -30,17 +30,17 @@ app.initialize();
 
 //////////////////START////////////////////////////
 function deviceReadyM() {
-    
+
      $body = $("body");
     listenerLogin();
-    
-   
-    
+
+
+
   if(localStorage.getItem("nuevo")==null){
             console.log('entra nuevo=null');
         $body.removeClass("hidden");
-            
-            
+        $body.removeClass("loading");
+
         }else if(localStorage.getItem("nuevo")=='Bueno'){
 //            $body.addClass("loading");
             startPageLogin(localStorage.getItem("usrAuxMeu"),localStorage.getItem("pswAuxMeu"));
@@ -49,13 +49,13 @@ function deviceReadyM() {
             console.log('elese');
         }
 
-    
+
         window.onpopstate = function(event) {
             if(event && event.state) {
                 location.reload();
             }
         }
-    
+
 
 }
 /////////////////////////////////////
@@ -71,7 +71,7 @@ var permissions;
 var nIntentos=0;
 
 function listenerLogin(){
-    
+
             $('#butLogin').click(function(e) {
         var user = $("#user").val();
         var password = $("#password").val();
@@ -114,7 +114,7 @@ xhr.onreadystatechange = function () {
         localStorage.setItem("nuevo", "Bueno");
         localStorage.setItem("usrAuxMeu", usrAuxMeu);
         localStorage.setItem("pswAuxMeu", pswAuxMeu);
-        
+
         location.replace('./dashboard.html');
         /*setTimeout(function(){
         }, 2000);*/
@@ -154,4 +154,3 @@ function runScript(e) {
         return false;
     }
 }
-
