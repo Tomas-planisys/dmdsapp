@@ -50,7 +50,7 @@ form{
 }
 .md-input-container label{
 		color: rgba(0, 0, 0, 0.54);
-		font-size: 10px !important;
+		font-size: 10px !important;    
 }
 .md-input-container.md-input-focused label{
 		color: #ef8f24 !important;
