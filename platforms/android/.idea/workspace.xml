@@ -2,7 +2,7 @@
 <project version="4">
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="conso" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e67f28c-e2bd-4930-87c2-706f07963d5f" name="Default" comment="" />
@@ -1492,8 +1492,12 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< HEAD
+        <entry key="C:\Users\albert\Documents\GitHub\dmdsapp\platforms\android" value="7516947811018" />
+=======
         <entry key="C:\Users\Tomas\ownCloud\Private\planisys\dmdsapp\platforms\android" value="7517492555357" />
         <entry key="C:\Users\albert\Documents\GitHub\dmdsapp\platforms\android" value="7516940174746" />
+>>>>>>> 0b1fed5fcc86ae64bf3a7e45e78ef8e1819a07b2
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1913,10 +1917,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
+    <option name="x" value="254" />
+    <option name="y" value="45" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+=======
     <option name="x" value="-4" />
     <option name="y" value="-4" />
     <option name="width" value="1928" />
     <option name="height" value="1044" />
+>>>>>>> 0b1fed5fcc86ae64bf3a7e45e78ef8e1819a07b2
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1944,9 +1955,15 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+=======
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+>>>>>>> 0b1fed5fcc86ae64bf3a7e45e78ef8e1819a07b2
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2301,7 +2318,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="7" />
+=======
+<<<<<<< HEAD
+    <frame x="254" y="45" width="1400" height="1000" extended-state="0" />
+=======
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+>>>>>>> 0b1fed5fcc86ae64bf3a7e45e78ef8e1819a07b2
+>>>>>>> refs/remotes/origin/www
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

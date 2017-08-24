@@ -50,7 +50,7 @@ form{
 }
 .md-input-container label{
 		color: rgba(0, 0, 0, 0.54);
-		font-size: 10px !important;
+		font-size: 10px !important;    
 }
 .md-input-container.md-input-focused label{
 		color: #ef8f24 !important;
@@ -60,7 +60,7 @@ form{
   font-size: 13px !important;
 }
 .md-input-container input::-moz-placeholder { /* Firefox 19+ */
-  font-size: 13px !important; 
+  font-size: 13px !important;
 }
 .md-input-container input:-ms-input-placeholder { /* IE 10+ */
   font-size: 13px !important;

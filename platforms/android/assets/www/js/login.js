@@ -40,7 +40,12 @@ function deviceReadyM() {
             console.log('entra nuevo=null');
         $body.removeClass("hidden");
         $body.removeClass("loading");
+<<<<<<< HEAD
+            
+            
+=======
 
+>>>>>>> 0b1fed5fcc86ae64bf3a7e45e78ef8e1819a07b2
         }else if(localStorage.getItem("nuevo")=='Bueno'){
 //            $body.addClass("loading");
             startPageLogin(localStorage.getItem("usrAuxMeu"),localStorage.getItem("pswAuxMeu"));
