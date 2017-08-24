@@ -34,13 +34,12 @@ function deviceReadyM() {
      $body = $("body");
     listenerLogin();
 
-   console.log('comentario');
+
 
   if(localStorage.getItem("nuevo")==null){
             console.log('entra nuevo=null');
         $body.removeClass("hidden");
         $body.removeClass("loading");
-
 
         }else if(localStorage.getItem("nuevo")=='Bueno'){
 //            $body.addClass("loading");
